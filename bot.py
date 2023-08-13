@@ -74,7 +74,7 @@ async def messageHandler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
         await context.bot.send_message(chat_id, text, parse_mode=constants.ParseMode.HTML)
 
 app = ApplicationBuilder().token(
-    "6661657439:AAHaAC4xGJKbVT6xFXMTt9oP5dDwHhzhXgg").build()
+    "6217705988:AAEOYp5g31rkl-iWrXAGE_mo7t0f0Oz3qIo").build()
 
 
 app.add_handler(CommandHandler("start", start))

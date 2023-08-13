@@ -17,7 +17,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     buttons = [[KeyboardButton(kyc), KeyboardButton(uytin)]]
 
     reply_markup = ReplyKeyboardMarkup(buttons, resize_keyboard=True)
-    await context.bot.send_message(chat_id=update.effective_chat.id, text="Hãy /funding để kiểm tra <b>Danh Sách Top Funding Fee</b>", parse_mode=constants.ParseMode.HTML)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="Bot thuộc quyền sở hữu của <b>Tải Tiền Trên Mạng 💸</b>. Liên hệ @iamnxa để sử dụng!", parse_mode=constants.ParseMode.HTML)
 
 
 def convertToLocalDate(date):

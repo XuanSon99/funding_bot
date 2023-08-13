@@ -31,7 +31,9 @@ async def messageHandler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     username = update.effective_user.username
     chat_id = update.effective_chat.id
 
-    if chat_id not in [-924771124, -1813759468]:
+    print(chat_id)
+
+    if chat_id not in [-1001749552228, -1001813759468]:
         if username not in ['minatabar']:
             text = "Bot thuộc quyền sở hữu của <b>Tải Tiền Trên Mạng 💸</b>. Liên hệ @iamnxa để sử dụng!"
             await context.bot.send_message(chat_id, text, parse_mode=constants.ParseMode.HTML)

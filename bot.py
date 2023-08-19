@@ -46,7 +46,7 @@ async def messageHandler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
                       key=lambda x: x['fundingRate'], reverse=False)
 
         top_list = [x for x in list if abs(x['fundingRate']) >= 0.005]
-        text = "<b>🔥 DANH SÁCH TOP FUNDING FEE 🔥</b>\n"
+        text = "<b>🔥 TOP FUNDING FEE 🔥</b>\n"
 
         tokens = requests.get(
             'https://contract.mexc.com/api/v1/contract/detail')
